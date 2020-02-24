@@ -4,12 +4,12 @@ AstroMender, an arcade space sim where energy management is everything.
 
 This was created for Global Game Jam 2020 at the SCAD Atlanta site.  
 
-This is my (Kevin O'Neil) local repo clone.
+This is my (Kevin O'Neil) repo clone of the main repo for preservation.
 
 You can view the official GGJ Jam page [HERE](https://globalgamejam.org/2020/games/astromancer-8)
 
 ## Energy System
-Most of what I personally contributed can be found under the Assets->Scripts->EnergySystem folder.  
+Most of what I personally contributed can be found under the Assets->Scripts->EnergySystem folder.  [QUICK LINK](https://github.com/killazilla54/AstroMender-GGJ2020/tree/master/Assets/Scripts/EnergySystem)
 
 The energy system has an interface with simple methods that all other parts of the game can call. For instance, if the player presses the shoot button, the player controller will just call the Shoot() function in the interface. The energy system will then evaluate if the "guns" are powered, if the ship has enough energy to fire, and if so, will deduct the energy cost and return a true value to let the calling function know the shot request is approved. The energy system does not actually fire the shot, it determines whether or not an action can be taken, alters the energy level accordingly, and returns its decision.  
 
@@ -18,7 +18,7 @@ I also developed a rouge like loot system. After a player had repaired all core 
 NOTE: This feature was fully coded, but was unfortunately disabled in the final Jam build due to us not having the time to balance the loot. We thought the base game was more enjoyable with a polished core system than by turning on an unbalanced loot system.
 
 
-Full Team Credits:
+## Full Team Credits:
 
 Kartik Kini
 
