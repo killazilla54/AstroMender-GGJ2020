@@ -2,17 +2,13 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+
+//Testing class for testing backend energy systems while player controller is being developed.
 public class ShipFunctions : MonoBehaviour
 {
 
     public EnergySystem energySystem;
     public Text energyText;
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
 
     // Update is called once per frame
     void Update()

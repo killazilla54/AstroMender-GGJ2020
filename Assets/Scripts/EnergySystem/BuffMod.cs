@@ -2,7 +2,14 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+//Kevin O'Neil
 [CreateAssetMenu(menuName="PlayerMods/Buff")]
+/**
+    This is the class for defining a mod used as a buff.
+    This is not one of the core systems (static effects) but instead
+    can be built in the Editor as a scriptable object and added to a loot table
+    for random upgrades at higher levels.
+*/
 public class BuffMod : ShipMod
 {
     public string effectName;

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine.SceneManagement;
 using UnityEngine;
 
+//Kevin O'Neil
 public class EnergySystem : MonoBehaviour
 {
     [SerializeField]
@@ -14,7 +15,7 @@ public class EnergySystem : MonoBehaviour
     [SerializeField]
     private float firstTier;
     [SerializeField]
-    private float minEnergy; //when you tier up, minimum energy to prevent tier down
+    private float minEnergy; //when you tier up, minimum energy to prevent immediate tier down
 
     //variables
     [SerializeField]
@@ -48,7 +49,8 @@ public class EnergySystem : MonoBehaviour
     {
         instance = this;
         inventory = new ModInventory();
-
+        //This will usually be level 1, but left open in case we do saves or 
+        //multiple levels where the player starts at a higher power tier.
         for (int i = 1; i < curEnergyTier; i++)
         {
             inventory.EquipNextMod(i);
@@ -127,7 +129,7 @@ public class EnergySystem : MonoBehaviour
     }
 
     public bool ShootGun(){
-        //Debug.Log("Shoot Command Received");
+        //Check if mod is equipped
         if(inventory.IsModEquippedActiveAtTier(ShipModEnum.ModType.ShooterCore, curEnergyTier)){
             float shootCostModifier = inventory.GetTotalEnergyModifierForType(ShipModEnum.ModType.AttackRate, curEnergyTier);
             //Attack damage isn't technically done here, 
@@ -135,7 +137,6 @@ public class EnergySystem : MonoBehaviour
             shootCostModifier += inventory.GetTotalEnergyModifierForType(ShipModEnum.ModType.AttackDamage, curEnergyTier);
             float adjustedShootCost = shootCost + shootCostModifier;
             bool success = SpendEnergy(adjustedShootCost);
-            //Debug.Log("Shoot attempt result: " + success);
             return success;
         }
         //Mod not equipped or active 

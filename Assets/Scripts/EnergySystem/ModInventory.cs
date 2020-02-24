@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+//Kevin O'Neil
 public class ModInventory
 {
     public Dictionary<ShipModEnum.ModType,ShipMod> equipedMods;
@@ -26,6 +27,7 @@ public class ModInventory
         ModFactory factory = new ModFactory();
         lootTable = new BuffLootTable();
 
+        //Build initial inventory of core system mods.
         ShipMod movementMod = factory.BuildMod(ShipModEnum.ModType.MovementCore);
         equipedMods.Add(movementMod.ShipModType,movementMod);
         ShipMod boostMod = factory.BuildMod(ShipModEnum.ModType.BoostCore);
@@ -36,6 +38,7 @@ public class ModInventory
         availableMods.Push(shootMod);
         Debug.Log("Available mods size: " + availableMods.Count);
 
+        //Movement Mod must be enabled at start.
         highestUnlockedTier = 1;
     }
 
@@ -76,7 +79,7 @@ public class ModInventory
     }
 
     /*
-     *  Returns total buff for type that are equipped and powered.
+     *  Returns total buff effect for type that are equipped and powered.
      *  Returns 0 if no buffs enabled.
      */
     public float GetTotalBuffForType(ShipModEnum.ModType type, int currentTier){
@@ -90,6 +93,10 @@ public class ModInventory
         return buffTotal;
     }
 
+    /*
+     *  Returns total energy modifier for type that are equipped and powered.
+     *  Returns 0 if no buffs enabled.
+     */
     public float GetTotalEnergyModifierForType(ShipModEnum.ModType type, int currentTier){
         float costModifier = 0;
         foreach(BuffMod buff in equippedBuffs){
@@ -101,6 +108,10 @@ public class ModInventory
         return costModifier;
     }
 
+    /*
+        This call should come from the controller handling user input for 
+        Level up mod selection.  Will add the selected mod to the player inventory.
+    */
     public bool EquipBuff(int index){
         if(availableBuffsForUserSelection == null) return false;
 
@@ -111,6 +122,10 @@ public class ModInventory
         return true;
     }
 
+    /*
+        For use when player levels up and all core systems are unlocked.
+        Generates 3 random buff mods to be returned to the UI for user selection.
+    */
     public List<BuffMod> GenerateBuffOptions(int currentTier){//pass buff Loot table?
         //Randomness?
         Debug.Log("Generating some buffs");
