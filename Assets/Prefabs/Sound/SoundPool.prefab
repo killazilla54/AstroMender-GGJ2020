@@ -1,0 +1,83 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &5039570819812314249
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5039570819812314255}
+  - component: {fileID: 5039570819812314248}
+  - component: {fileID: 1195736501}
+  m_Layer: 0
+  m_Name: SoundPool
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5039570819812314255
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5039570819812314249}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 11.7, y: 0, z: 159.2}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5039570819812314248
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5039570819812314249}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 06b84694ab780c340ae30e97f6d48ee5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  soundPoolable: {fileID: 7575355810848234345, guid: e09ec8b34a2b1f74faa1f24bdeaa3fe4,
+    type: 3}
+  poolSize: 20
+--- !u!114 &1195736501
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5039570819812314249}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1486077055f1e304ebaf299c60eb1770, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  EnemyExplosion: {fileID: 8300000, guid: 32cd2d659d8608643b5149dc49919f97, type: 3}
+  EnemyExplosion2: {fileID: 8300000, guid: 2b866e42716a47c4791c6ff15ba7b9ca, type: 3}
+  EnemyExplosion3: {fileID: 8300000, guid: 9cfe8e6d321c2274b8b5c33ffabd6fb2, type: 3}
+  Laser1: {fileID: 8300000, guid: 845d5794a4da5f042800799e3cb371b6, type: 3}
+  Laser2: {fileID: 8300000, guid: ac486608edf54b34990f2c4b31d5b94f, type: 3}
+  BigPickup: {fileID: 8300000, guid: 22b4f8bef735f384e857871f2a4e31df, type: 3}
+  MediumPickup: {fileID: 8300000, guid: 19dfad3da52b91b4896b5c0f0c1d6573, type: 3}
+  SmallPickup: {fileID: 8300000, guid: b1cc9e2480989214bbb0970b6b7616ab, type: 3}
+  AstromenderTitle: {fileID: 8300000, guid: d7baefcab15b53945b46903d1186789f, type: 3}
+  AstromenderBattleThemeIntro: {fileID: 8300000, guid: 7a02575d90bf5ae42b4cfb5cf2141f6a,
+    type: 3}
+  AstromenderBattleThemeLoop: {fileID: 8300000, guid: e51b66a47d1d2e44e8c49aa07d6cc9af,
+    type: 3}
+  Dodge: {fileID: 8300000, guid: b73b40f4bb81be04ebcdf98dc8444643, type: 3}
+  EnemyHit: {fileID: 8300000, guid: d25afea53284ef942ad0bcaaafa1454d, type: 3}
+  HitConfirm: {fileID: 8300000, guid: 1ca352d8567e06c44a1b8901375488e8, type: 3}
+  PlayerHit: {fileID: 8300000, guid: 5eac0756342f25848bffe882d4b3e883, type: 3}
+  PlayerLaser: {fileID: 8300000, guid: 127c1dd61816dea4bb9f3d34d3ec4eba, type: 3}
+  PlayerDeath: {fileID: 8300000, guid: 5bee84dd000539a4faacfc277c6bccb7, type: 3}
+  PowerDown: {fileID: 8300000, guid: 85e320082056a8f4f86ef6294c795cbe, type: 3}
+  PowerUp: {fileID: 8300000, guid: 5ce174cf73319cb4b91a01d790b2556d, type: 3}
+  Boost: {fileID: 8300000, guid: 3a1c3232d28c3424c902c41461323bfb, type: 3}

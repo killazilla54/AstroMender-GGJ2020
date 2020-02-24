@@ -1,0 +1,136 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-8850014076577188160
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 55c1a9bd4907e2b4292a173442a8a6cd, type: 3}
+  m_Name: PixelatePostProcessing
+  m_EditorClassIdentifier: 
+  active: 1
+  enabled:
+    overrideState: 1
+    value: 1
+  ditherTexture:
+    overrideState: 1
+    value: {fileID: 2800000, guid: d5220e32c88030a4ab8c3023006ed9d0, type: 3}
+    defaultState: 1
+  target:
+    overrideState: 1
+    value: 0
+  columns:
+    overrideState: 1
+    value: 256
+  rows:
+    overrideState: 1
+    value: 256
+  step1:
+    overrideState: 1
+    value: 0.2
+  step2:
+    overrideState: 1
+    value: 0.4
+  step3:
+    overrideState: 1
+    value: 0.6
+  step4:
+    overrideState: 1
+    value: 0.8
+  ditherThreshold:
+    overrideState: 1
+    value: 0.01
+  ditherScale:
+    overrideState: 1
+    value: 25
+  bwBlend:
+    overrideState: 1
+    value: 0
+  screencolor:
+    overrideState: 1
+    value: {r: 0.05882353, g: 0.21960784, b: 0.05882353, a: 1}
+  screencolortop:
+    overrideState: 1
+    value: {r: 0.6035135, g: 0.7372549, b: 0.03612551, a: 1}
+--- !u!114 &-1724095059724118306
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 0}
+  m_Name: Pixelate
+  m_EditorClassIdentifier: GGJ2020::Pixelate
+  active: 1
+  enabled:
+    overrideState: 1
+    value: 1
+  ditherTexture:
+    overrideState: 1
+    value: {fileID: 2800000, guid: d5220e32c88030a4ab8c3023006ed9d0, type: 3}
+    defaultState: 1
+  target:
+    overrideState: 1
+    value: 0
+  columns:
+    overrideState: 1
+    value: 256
+  rows:
+    overrideState: 1
+    value: 256
+  step1:
+    overrideState: 1
+    value: 0.2
+  step2:
+    overrideState: 1
+    value: 0.4
+  step3:
+    overrideState: 1
+    value: 0.6
+  step4:
+    overrideState: 1
+    value: 0.8
+  ditherThreshold:
+    overrideState: 1
+    value: 0.01
+  ditherScale:
+    overrideState: 1
+    value: 25
+  bwBlend:
+    overrideState: 1
+    value: 0
+  screencolor:
+    overrideState: 1
+    value:
+      r: 0.05882353
+      g: 0.21960784
+      b: 0.05882353
+      a: 1
+  screencolortop:
+    overrideState: 1
+    value:
+      r: 0.60784316
+      g: 0.7372549
+      b: 0.05882353
+      a: 1
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e6292b2c06870d4495f009f912b9600, type: 3}
+  m_Name: Cool2
+  m_EditorClassIdentifier: 
+  settings:
+  - {fileID: -8850014076577188160}

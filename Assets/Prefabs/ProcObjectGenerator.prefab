@@ -1,0 +1,99 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &8692519942316739151
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8692519942316739137}
+  - component: {fileID: 8692519942316739136}
+  m_Layer: 0
+  m_Name: ProcObjectGenerator
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8692519942316739137
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8692519942316739151}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 39.200012}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8692519942316739136
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8692519942316739151}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6f32cbc5ed221cd45abe9cc5f7328604, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 0}
+  maxObjectCount: 40
+  spawnRadius: 100
+  waitToSpawnEnemies: 60
+  allObjects:
+  - name: EnergyGroup
+    spawnObject: {fileID: 2621818450918328222, guid: 419e96b444f27264cafdbbef8c9c044c,
+      type: 3}
+    weight: 2
+    priority: 1
+  - name: EnergyGroup
+    spawnObject: {fileID: 8152826791790578573, guid: cc7ad4255cb5c484ea5d5ca7acdccac1,
+      type: 3}
+    weight: 2
+    priority: 1
+  - name: EnergyGroup
+    spawnObject: {fileID: 2430263058810217709, guid: 468c96fac143b4c43948ffc6f6b97ca8,
+      type: 3}
+    weight: 2
+    priority: 1
+  - name: EnergyPickup1
+    spawnObject: {fileID: 4937648114479502498, guid: c8365dfc699be4289911cc0e25767eb7,
+      type: 3}
+    weight: 30
+    priority: 1
+  - name: EnergyPickup2
+    spawnObject: {fileID: 4937648114479502498, guid: ac57876b15bff4dc7bc2f01d6d1bcb0d,
+      type: 3}
+    weight: 20
+    priority: 1
+  - name: EnergyPickup3
+    spawnObject: {fileID: 4937648114479502498, guid: bd2d0505ccf0d4836b8bf88870e959e0,
+      type: 3}
+    weight: 2
+    priority: 1
+  - name: Enemy
+    spawnObject: {fileID: 1582498257826013817, guid: 813477479ac0c4fd4b3c40f763c97423,
+      type: 3}
+    weight: 2
+    priority: 1
+  - name: Enemy
+    spawnObject: {fileID: 1582498257826013817, guid: bc6400b76ef704da6b45df157a147e3d,
+      type: 3}
+    weight: 2
+    priority: 1
+  - name: Enemy
+    spawnObject: {fileID: 7960151902523219270, guid: 8aea9539e679ce8479b1c1c710f996f7,
+      type: 3}
+    weight: 1
+    priority: 1
+  numInitEnergyPickups: 0
+  initEnergyPrefab: {fileID: 4937648114479502498, guid: c8365dfc699be4289911cc0e25767eb7,
+    type: 3}
+  maxNumEnemiesinGame: 3

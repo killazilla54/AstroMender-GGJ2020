@@ -1,0 +1,878 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-9099163952336108796
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 0}
+  m_Name: Pixelate
+  m_EditorClassIdentifier: GGJ2020::Pixelate
+  active: 1
+  enabled:
+    overrideState: 1
+    value: 1
+  ditherTexture:
+    overrideState: 0
+    value: {fileID: 0}
+    defaultState: 1
+  target:
+    overrideState: 0
+    value: 0
+  columns:
+    overrideState: 0
+    value: 64
+  rows:
+    overrideState: 0
+    value: 64
+  step1:
+    overrideState: 0
+    value: 0.2
+  step2:
+    overrideState: 0
+    value: 0.4
+  step3:
+    overrideState: 0
+    value: 0.6
+  step4:
+    overrideState: 0
+    value: 0.8
+  ditherThreshold:
+    overrideState: 0
+    value: 0.1
+  ditherScale:
+    overrideState: 0
+    value: 1
+  bwBlend:
+    overrideState: 0
+    value: 0
+  screencolor:
+    overrideState: 0
+    value: {r: 0, g: 0, b: 0, a: 1}
+  screencolortop:
+    overrideState: 0
+    value: {r: 1, g: 1, b: 1, a: 1}
+--- !u!114 &-8763135031399135400
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 0}
+  m_Name: Pixelate
+  m_EditorClassIdentifier: GGJ2020::Pixelate
+  active: 1
+  enabled:
+    overrideState: 1
+    value: 1
+  ditherTexture:
+    overrideState: 0
+    value: {fileID: 0}
+    defaultState: 1
+  target:
+    overrideState: 1
+    value: 0
+  columns:
+    overrideState: 1
+    value: 256
+  rows:
+    overrideState: 1
+    value: 256
+  step1:
+    overrideState: 1
+    value: 0.1
+  step2:
+    overrideState: 1
+    value: 0.3
+  step3:
+    overrideState: 1
+    value: 0.5
+  step4:
+    overrideState: 1
+    value: 0.7
+  ditherThreshold:
+    overrideState: 1
+    value: 0.1
+  ditherScale:
+    overrideState: 0
+    value: 1
+  bwBlend:
+    overrideState: 1
+    value: 0
+  screencolor:
+    overrideState: 1
+    value: {r: 0.05882353, g: 0.21960784, b: 0.05882353, a: 1}
+  screencolortop:
+    overrideState: 0
+    value: {r: 1, g: 1, b: 1, a: 1}
+--- !u!114 &-7742453053322813115
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 0}
+  m_Name: Pixelate
+  m_EditorClassIdentifier: GGJ2020::Pixelate
+  active: 1
+  enabled:
+    overrideState: 1
+    value: 1
+  ditherTexture:
+    overrideState: 1
+    value: {fileID: 2800000, guid: d5220e32c88030a4ab8c3023006ed9d0, type: 3}
+    defaultState: 1
+  target:
+    overrideState: 1
+    value: 0
+  columns:
+    overrideState: 1
+    value: 256
+  rows:
+    overrideState: 1
+    value: 256
+  step1:
+    overrideState: 1
+    value: 0.2
+  step2:
+    overrideState: 1
+    value: 0.4
+  step3:
+    overrideState: 1
+    value: 0.6
+  step4:
+    overrideState: 1
+    value: 0.8
+  ditherThreshold:
+    overrideState: 1
+    value: 0.01
+  ditherScale:
+    overrideState: 1
+    value: 25
+  bwBlend:
+    overrideState: 1
+    value: 0
+  screencolor:
+    overrideState: 1
+    value: {r: 0.028948452, g: 0.2264151, b: 0, a: 1}
+  screencolortop:
+    overrideState: 1
+    value: {r: 0.6298213, g: 1, b: 0, a: 1}
+--- !u!114 &-6256664582852588302
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 0}
+  m_Name: Pixelate
+  m_EditorClassIdentifier: GGJ2020::Pixelate
+  active: 1
+  enabled:
+    overrideState: 1
+    value: 1
+  ditherTexture:
+    overrideState: 1
+    value: {fileID: 2800000, guid: d5220e32c88030a4ab8c3023006ed9d0, type: 3}
+    defaultState: 1
+  target:
+    overrideState: 1
+    value: 0
+  columns:
+    overrideState: 1
+    value: 256
+  rows:
+    overrideState: 1
+    value: 256
+  step1:
+    overrideState: 1
+    value: 0.2
+  step2:
+    overrideState: 1
+    value: 0.4
+  step3:
+    overrideState: 1
+    value: 0.6
+  step4:
+    overrideState: 1
+    value: 0.8
+  ditherThreshold:
+    overrideState: 1
+    value: 0.01
+  ditherScale:
+    overrideState: 1
+    value: 25
+  bwBlend:
+    overrideState: 1
+    value: 0
+  screencolor:
+    overrideState: 1
+    value: {r: 0.02745098, g: 0.22745098, b: 0, a: 1}
+  screencolortop:
+    overrideState: 1
+    value: {r: 0.6313726, g: 1, b: 0, a: 1}
+--- !u!114 &-6214312074438441318
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 0}
+  m_Name: ColorClamp
+  m_EditorClassIdentifier: GGJ2020::ColorClamp
+  active: 0
+  enabled:
+    overrideState: 1
+    value: 1
+  target:
+    overrideState: 1
+    value: 0
+  columns:
+    overrideState: 1
+    value: 256
+  rows:
+    overrideState: 1
+    value: 256
+  color_depth:
+    overrideState: 1
+    value: 6
+--- !u!114 &-5603020036190873891
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 0}
+  m_Name: Pixelate
+  m_EditorClassIdentifier: Assembly-CSharp::Pixelate
+  active: 1
+  enabled:
+    overrideState: 1
+    value: 1
+  target:
+    overrideState: 1
+    value: 0
+  columns:
+    overrideState: 1
+    value: 64
+  rows:
+    overrideState: 1
+    value: 64
+--- !u!114 &-4144101577298704678
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 0}
+  m_Name: Pixelate
+  m_EditorClassIdentifier: GGJ2020::Pixelate
+  active: 1
+  enabled:
+    overrideState: 1
+    value: 1
+  ditherTexture:
+    overrideState: 1
+    value: {fileID: 2800000, guid: d5220e32c88030a4ab8c3023006ed9d0, type: 3}
+    defaultState: 1
+  target:
+    overrideState: 1
+    value: 0
+  columns:
+    overrideState: 1
+    value: 256
+  rows:
+    overrideState: 1
+    value: 256
+  step1:
+    overrideState: 1
+    value: 0.2
+  step2:
+    overrideState: 1
+    value: 0.4
+  step3:
+    overrideState: 1
+    value: 0.6
+  step4:
+    overrideState: 1
+    value: 0.8
+  ditherThreshold:
+    overrideState: 1
+    value: 0.01
+  ditherScale:
+    overrideState: 1
+    value: 25
+  bwBlend:
+    overrideState: 1
+    value: 0
+  screencolor:
+    overrideState: 1
+    value: {r: 0.05882353, g: 0.21960784, b: 0.05882353, a: 1}
+  screencolortop:
+    overrideState: 1
+    value: {r: 0.60784316, g: 0.7372549, b: 0.05882353, a: 1}
+--- !u!114 &-3745989691167902758
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 0}
+  m_Name: Pixelate
+  m_EditorClassIdentifier: Assembly-CSharp::Pixelate
+  active: 1
+  enabled:
+    overrideState: 1
+    value: 1
+  target:
+    overrideState: 1
+    value: 0
+  columns:
+    overrideState: 1
+    value: 85
+  rows:
+    overrideState: 1
+    value: 45
+--- !u!114 &-3540076141592314864
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 0}
+  m_Name: Pixelate
+  m_EditorClassIdentifier: GGJ2020::Pixelate
+  active: 1
+  enabled:
+    overrideState: 1
+    value: 1
+  ditherTexture:
+    overrideState: 1
+    value: {fileID: 2800000, guid: d5220e32c88030a4ab8c3023006ed9d0, type: 3}
+    defaultState: 1
+  target:
+    overrideState: 1
+    value: 0
+  columns:
+    overrideState: 1
+    value: 256
+  rows:
+    overrideState: 1
+    value: 256
+  step1:
+    overrideState: 1
+    value: 0.2
+  step2:
+    overrideState: 1
+    value: 0.4
+  step3:
+    overrideState: 1
+    value: 0.6
+  step4:
+    overrideState: 1
+    value: 0.8
+  ditherThreshold:
+    overrideState: 1
+    value: 0.01
+  ditherScale:
+    overrideState: 1
+    value: 25
+  bwBlend:
+    overrideState: 1
+    value: 0
+  screencolor:
+    overrideState: 1
+    value: {r: 0.05882353, g: 0.21960784, b: 0.05882353, a: 1}
+  screencolortop:
+    overrideState: 1
+    value: {r: 0.60784316, g: 0.7372549, b: 0.05882353, a: 1}
+--- !u!114 &-932478137371123461
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 0}
+  m_Name: Pixelate
+  m_EditorClassIdentifier: GGJ2020::Pixelate
+  active: 1
+  enabled:
+    overrideState: 1
+    value: 1
+  ditherTexture:
+    overrideState: 1
+    value: {fileID: 2800000, guid: d5220e32c88030a4ab8c3023006ed9d0, type: 3}
+    defaultState: 1
+  target:
+    overrideState: 1
+    value: 0
+  columns:
+    overrideState: 1
+    value: 256
+  rows:
+    overrideState: 1
+    value: 256
+  step1:
+    overrideState: 1
+    value: 0.2
+  step2:
+    overrideState: 1
+    value: 0.4
+  step3:
+    overrideState: 1
+    value: 0.6
+  step4:
+    overrideState: 1
+    value: 0.8
+  ditherThreshold:
+    overrideState: 1
+    value: 0.01
+  ditherScale:
+    overrideState: 1
+    value: 25
+  bwBlend:
+    overrideState: 1
+    value: 0
+  screencolor:
+    overrideState: 1
+    value: {r: 0.05882353, g: 0.21960784, b: 0.05882353, a: 1}
+  screencolortop:
+    overrideState: 1
+    value: {r: 0.60784316, g: 0.7372549, b: 0.05882353, a: 1}
+--- !u!114 &-308844974544390634
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 0}
+  m_Name: Pixelate
+  m_EditorClassIdentifier: GGJ2020::Pixelate
+  active: 1
+  enabled:
+    overrideState: 1
+    value: 1
+  ditherTexture:
+    overrideState: 1
+    value: {fileID: 2800000, guid: d5220e32c88030a4ab8c3023006ed9d0, type: 3}
+    defaultState: 1
+  target:
+    overrideState: 1
+    value: 0
+  columns:
+    overrideState: 1
+    value: 256
+  rows:
+    overrideState: 1
+    value: 256
+  step1:
+    overrideState: 1
+    value: 0.2
+  step2:
+    overrideState: 1
+    value: 0.4
+  step3:
+    overrideState: 1
+    value: 0.6
+  step4:
+    overrideState: 1
+    value: 0.8
+  ditherThreshold:
+    overrideState: 1
+    value: 0.01
+  ditherScale:
+    overrideState: 1
+    value: 25
+  bwBlend:
+    overrideState: 1
+    value: 0
+  screencolor:
+    overrideState: 1
+    value: {r: 0.05882353, g: 0.21960784, b: 0.05882353, a: 1}
+  screencolortop:
+    overrideState: 1
+    value: {r: 0.60784316, g: 0.7372549, b: 0.05882353, a: 1}
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e6292b2c06870d4495f009f912b9600, type: 3}
+  m_Name: CoolEffects
+  m_EditorClassIdentifier: 
+  settings:
+  - {fileID: -3540076141592314864}
+--- !u!114 &3460170100324767800
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 0}
+  m_Name: Pixelate
+  m_EditorClassIdentifier: GGJ2020::Pixelate
+  active: 1
+  enabled:
+    overrideState: 1
+    value: 1
+  ditherTexture:
+    overrideState: 1
+    value: {fileID: 2800000, guid: 802291483ed7cf24f8bd358cc79d2a93, type: 3}
+    defaultState: 1
+  target:
+    overrideState: 1
+    value: 0
+  columns:
+    overrideState: 1
+    value: 1024
+  rows:
+    overrideState: 1
+    value: 1024
+  step1:
+    overrideState: 1
+    value: 0.2
+  step2:
+    overrideState: 1
+    value: 0.4
+  step3:
+    overrideState: 1
+    value: 0.6
+  step4:
+    overrideState: 1
+    value: 0.8
+  ditherThreshold:
+    overrideState: 1
+    value: 0.05
+  ditherScale:
+    overrideState: 0
+    value: 1
+  bwBlend:
+    overrideState: 1
+    value: 0
+  screencolor:
+    overrideState: 1
+    value: {r: 0.046551626, g: 0.23584908, b: 0, a: 1}
+  screencolortop:
+    overrideState: 0
+    value: {r: 1, g: 1, b: 1, a: 1}
+--- !u!114 &4332431920591835357
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 0}
+  m_Name: Pixelate
+  m_EditorClassIdentifier: GGJ2020::Pixelate
+  active: 1
+  enabled:
+    overrideState: 1
+    value: 1
+  ditherTexture:
+    overrideState: 1
+    value: {fileID: 2800000, guid: d5220e32c88030a4ab8c3023006ed9d0, type: 3}
+    defaultState: 1
+  target:
+    overrideState: 1
+    value: 0
+  columns:
+    overrideState: 1
+    value: 256
+  rows:
+    overrideState: 1
+    value: 256
+  step1:
+    overrideState: 1
+    value: 0.2
+  step2:
+    overrideState: 1
+    value: 0.4
+  step3:
+    overrideState: 1
+    value: 0.6
+  step4:
+    overrideState: 1
+    value: 0.8
+  ditherThreshold:
+    overrideState: 1
+    value: 0.01
+  ditherScale:
+    overrideState: 1
+    value: 25
+  bwBlend:
+    overrideState: 1
+    value: 0
+  screencolor:
+    overrideState: 1
+    value: {r: 0.05882353, g: 0.21960784, b: 0.05882353, a: 1}
+  screencolortop:
+    overrideState: 1
+    value: {r: 0.60784316, g: 0.7372549, b: 0.05882353, a: 1}
+--- !u!114 &4773947920841551120
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 0}
+  m_Name: Pixelate
+  m_EditorClassIdentifier: GGJ2020::Pixelate
+  active: 1
+  enabled:
+    overrideState: 1
+    value: 1
+  ditherTexture:
+    overrideState: 1
+    value: {fileID: 2800000, guid: d7d74a46c4a74c9439b08de7c32a3be1, type: 3}
+    defaultState: 1
+  target:
+    overrideState: 1
+    value: 0
+  columns:
+    overrideState: 1
+    value: 128
+  rows:
+    overrideState: 1
+    value: 128
+  step1:
+    overrideState: 1
+    value: 0.2
+  step2:
+    overrideState: 1
+    value: 0.4
+  step3:
+    overrideState: 1
+    value: 0.6
+  step4:
+    overrideState: 1
+    value: 0.8
+  ditherThreshold:
+    overrideState: 1
+    value: 0.05
+  ditherScale:
+    overrideState: 1
+    value: 24
+  bwBlend:
+    overrideState: 1
+    value: 0
+  screencolor:
+    overrideState: 1
+    value: {r: 0.05882353, g: 0.21960784, b: 0.05882353, a: 1}
+  screencolortop:
+    overrideState: 1
+    value: {r: 0.60784316, g: 0.7372549, b: 0.05882353, a: 1}
+--- !u!114 &7302837059611159850
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 0}
+  m_Name: Pixelate
+  m_EditorClassIdentifier: GGJ2020::Pixelate
+  active: 1
+  enabled:
+    overrideState: 1
+    value: 1
+  ditherTexture:
+    overrideState: 0
+    value: {fileID: 0}
+    defaultState: 1
+  target:
+    overrideState: 1
+    value: 0
+  columns:
+    overrideState: 1
+    value: 64
+  rows:
+    overrideState: 1
+    value: 64
+  step1:
+    overrideState: 0
+    value: 0.2
+  step2:
+    overrideState: 0
+    value: 0.4
+  step3:
+    overrideState: 0
+    value: 0.6
+  step4:
+    overrideState: 0
+    value: 0.8
+  ditherThreshold:
+    overrideState: 0
+    value: 0.1
+  ditherScale:
+    overrideState: 0
+    value: 1
+  bwBlend:
+    overrideState: 1
+    value: 1
+  screencolor:
+    overrideState: 1
+    value: {r: 0, g: 0.0442383, b: 0.6603774, a: 1}
+  screencolortop:
+    overrideState: 0
+    value: {r: 1, g: 1, b: 1, a: 1}
+--- !u!114 &7976601082687210405
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 0}
+  m_Name: Pixelate
+  m_EditorClassIdentifier: GGJ2020::Pixelate
+  active: 1
+  enabled:
+    overrideState: 1
+    value: 1
+  ditherTexture:
+    overrideState: 0
+    value: {fileID: 0}
+    defaultState: 1
+  target:
+    overrideState: 0
+    value: 0
+  columns:
+    overrideState: 0
+    value: 64
+  rows:
+    overrideState: 0
+    value: 64
+  step1:
+    overrideState: 0
+    value: 0.2
+  step2:
+    overrideState: 0
+    value: 0.4
+  step3:
+    overrideState: 0
+    value: 0.6
+  step4:
+    overrideState: 0
+    value: 0.8
+  ditherThreshold:
+    overrideState: 0
+    value: 0.1
+  ditherScale:
+    overrideState: 0
+    value: 1
+  bwBlend:
+    overrideState: 0
+    value: 0
+  screencolor:
+    overrideState: 0
+    value: {r: 0, g: 0, b: 0, a: 1}
+  screencolortop:
+    overrideState: 0
+    value: {r: 1, g: 1, b: 1, a: 1}
+--- !u!114 &8221599246295762882
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 0}
+  m_Name: Pixelate
+  m_EditorClassIdentifier: GGJ2020::Pixelate
+  active: 1
+  enabled:
+    overrideState: 1
+    value: 1
+  ditherTexture:
+    overrideState: 1
+    value: {fileID: 2800000, guid: d5220e32c88030a4ab8c3023006ed9d0, type: 3}
+    defaultState: 1
+  target:
+    overrideState: 1
+    value: 0
+  columns:
+    overrideState: 1
+    value: 256
+  rows:
+    overrideState: 1
+    value: 256
+  step1:
+    overrideState: 1
+    value: 0.2
+  step2:
+    overrideState: 1
+    value: 0.4
+  step3:
+    overrideState: 1
+    value: 0.6
+  step4:
+    overrideState: 1
+    value: 0.8
+  ditherThreshold:
+    overrideState: 1
+    value: 0.01
+  ditherScale:
+    overrideState: 1
+    value: 25
+  bwBlend:
+    overrideState: 1
+    value: 0
+  screencolor:
+    overrideState: 1
+    value: {r: 0.05490196, g: 0.11372549, b: 0, a: 1}
+  screencolortop:
+    overrideState: 1
+    value: {r: 0.7490196, g: 1, b: 0, a: 1}
